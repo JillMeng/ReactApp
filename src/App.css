@@ -1,0 +1,59 @@
+.App {
+  display: grid;
+  grid-template-areas:
+      "header header header"
+      "left center right"
+      "footer footer footer";
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  gap: 5px;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  /* center along main axis */
+  justify-content: center;
+  /* center along cross axis */
+  align-items: center;
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}
+
+.center {
+  grid-area: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.aqua_backgound {
+  background-color: aqua;
+}
+
+.boader {
+  border: 2px rgba(73, 195, 243, 0.623) solid;
+}
+
+.box {
+  background-color: rgb(99, 205, 50);
+  width: 60px;
+  height: 60px;
+  transition: 500ms linear;
+}
+
+.hoverable:hover {
+  transform: scale(2.0);
+  background-color: yellow;
+}
